@@ -63,3 +63,76 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # api-service-kendaraan
+
+# Nama Proyek
+
+Deskripsi singkat proyek Anda di sini.
+
+## Persyaratan
+
+Sebelum memulai instalasi, pastikan komputer Anda memenuhi persyaratan berikut:
+- PHP 8.0 atau versi lebih baru terinstal
+- Composer terinstal
+- MongoDB 4.2 terinstal
+
+## Instalasi
+
+Berikut adalah langkah-langkah untuk menginstal dan menjalankan proyek ini:
+
+1. Clone repositori proyek:
+
+```shell
+git clone git@github.com:wahyuwehaye/api-service-kendaraan.git
+
+```
+
+2. Masuk ke folder api-service-kendaraan
+```shell
+cd api-service-kendaraan
+```
+
+3. Install composer packages
+```shell
+composer install
+```
+
+4. Buat .env file
+```shell
+cp .env.example .env
+```
+
+5. Buat .env.testing file
+```shell
+cp .env.testing.example .env.testing
+```
+
+
+6. Generate kunci aplikasi:
+```shell
+php artisan key:generate
+```
+
+7. Install dependensi proyek menggunakan Composer:
+```shell
+composer install
+```
+8. Buat database MongoDB
+```shell
+mongo
+```
+9. Buat database MongoDB
+```shell
+use kendaraan
+```
+10. Jalankan migrasi untuk membuat tabel dan struktur database:
+```shell
+php artisan migrate
+```
+11. Buat .env.testing file
+```shell
+cp .env.testing.example .env.testing
+```
+12. Jalankan PHPUnit untuk memeriksa kode sumber
+```shell
+phpunit
+```
